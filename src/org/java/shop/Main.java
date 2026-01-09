@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("---------------------------------------------------");
-        Product Smartphone = new Smartphone("SamsungA32", "Un Telefono perfetto per tuo figlio!", "Samsung", 130.35f,
+        Smartphone Smartphone = new Smartphone("SamsungA32", "Un Telefono perfetto per tuo figlio!", "Samsung", 130.35f,
                 22, "1024059381920398", 32);
         Smartphone.setName("Iphone-13");
         System.out.println(Smartphone.toString());
