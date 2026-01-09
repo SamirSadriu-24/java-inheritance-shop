@@ -31,8 +31,9 @@ public class HeadPhone extends Product {
         this.color = color;
     }
 
+
     public String toString() {
-        return getCodex() + "\n" + getName() + "\n" + getDescription() + "\n" + getBrand() + "\n" + getPrice() + "\n"
+        return "\n" + getName() + "\n" + "\n" + getBrand() + "\n" + getPrice() + "\n"
                 + "Colore: " + getColor() + "\n" + "Connessione: "
                 + getisWireless();
     }

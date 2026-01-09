@@ -4,18 +4,18 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("---------------------------------------------------");
-        Smartphone Smartphone = new Smartphone("SamsungA32", "Un Telefono perfetto per tuo figlio!", "Samsung", 130.35f,
+        Smartphone SamsungA32 = new Smartphone("SamsungA32", "Un Telefono perfetto per tuo figlio!", "Samsung", 130.35f,
                 22, "1024059381920398", 32);
-        Smartphone.setName("Iphone-13");
-        System.out.println(Smartphone.toString());
+        SamsungA32.setName("Iphone-13");
+        System.out.println(SamsungA32.toString());
 
         System.out.println("---------------------------------------------------");
         System.out.println("---------------------------------------------------");
-        Television TV = new Television("PanasonicWide", "Un Televisore perfetto per la tua famiglia!", "Panasonic",
+        Television TVProva = new Television("PanasonicWide", "Un Televisore perfetto per la tua famiglia!", "Panasonic",
                 500.00f,
                 22, "Medium", true);
-        TV.setName("HP-123");
-        System.out.println(TV.toString());
+        TVProva.setName("HP-123");
+        System.out.println(TVProva.toString());
 
         System.out.println("---------------------------------------------------");
         System.out.println("---------------------------------------------------");
