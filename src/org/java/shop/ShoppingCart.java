@@ -247,7 +247,8 @@ public class ShoppingCart {
                 }
                 System.out.println("Totale: " + PrezzoTotale);
                 break;
-        }}
+            }}
+            scanner.close();
         
 
 
