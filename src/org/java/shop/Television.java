@@ -1,12 +1,14 @@
 package org.java.shop;
 
+import java.math.BigDecimal;
+
 public class Television extends Product {
     private String size;
     private boolean IsSmart;
 
-    public Television(String name, String description, String brand, float price, float iva, String size,
+    public Television(String name, String brand, BigDecimal price, String size,
             boolean IsSmart) {
-        super(name, description, brand, price, iva);
+        super(name, brand, price);
         this.size = size;
         this.IsSmart = IsSmart;
 
@@ -29,7 +31,7 @@ public class Television extends Product {
     }
 
     public String toString() {
-        return getCodex() + "\n" + getName() + "\n" + getDescription() + "\n" + getBrand() + "\n" + getPrice() + "\n"
+        return getCodex() + "\n" + getName() + "\n" + "\n" + getBrand() + "\n" + getPrice() + "\n"
                 + "Size: " + getSize() + "\n" + "Is Smart: "
                 + getIsSmart();
     }

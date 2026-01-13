@@ -1,24 +1,22 @@
 package org.java.shop;
 
 import java.util.Random;
+import java.math.BigDecimal;
+
 
 public class Product {
     private int codex;
     private String name;
-    private String description;
     private String brand;
-    private float price;
-    private float iva;
+    private BigDecimal price;
+    private float iva = 22;
 
-    public Product(String name, String description, String brand, float price, float iva) {
+    public Product(String name, String brand, BigDecimal price){
         Random random = new Random();
         this.codex = random.nextInt(300);
         this.name = name;
-        this.description = description;
         this.brand = brand;
         this.price = price;
-        this.iva = iva;
-
     }
 
     public int getCodex() {
@@ -33,14 +31,6 @@ public class Product {
         this.name = name;
     }
 
-    public String getDescription() {
-        return this.description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getBrand() {
         return this.brand;
     }
@@ -49,11 +39,11 @@ public class Product {
         this.brand = brand;
     }
 
-    public float getPrice() {
+    public BigDecimal getPrice() {
         return this.price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
@@ -65,5 +55,6 @@ public class Product {
         this.iva = iva;
     }
 
+    
 
 }

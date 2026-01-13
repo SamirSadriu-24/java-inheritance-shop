@@ -1,17 +1,27 @@
 package org.java.shop;
 
-public class Smartphone extends Product {
-    private String IMEI;
-    private int memory;
+import java.math.BigDecimal;
+import java.util.Random;
 
-    public Smartphone(String name, String description, String brand, float price, float iva, String IMEI,
+
+public class Smartphone extends Product {
+    private int IMEI;
+    private int memory;
+    
+    public int IMEIGENERATOR(){
+        Random random = new Random();
+        return random.nextInt(999999999);
+    }
+    
+
+    public Smartphone(String name, String brand, BigDecimal price,
             int memory) {
-        super(name, description, brand, price, iva);
-        this.IMEI = IMEI;
+        super(name, brand, price);
+        this.IMEI = IMEIGENERATOR();
         this.memory = memory;
     }
 
-    public String getIMEI() {
+    public int getIMEI() {
         return this.IMEI;
     }
 
@@ -24,7 +34,8 @@ public class Smartphone extends Product {
     }
 
     public String toString() {
-        return getCodex() + "\n" + getName() + "\n" + getDescription() + "\n" + getBrand() + "\n" + getPrice() + "\n" + "IMEI: " + getIMEI() + "\n"
+        return getCodex() + "\n" + getName() + "\n" + "\n" + getBrand() + "\n" + getPrice() + "\n" + "IMEI: "
+                + getIMEI() + "\n"
                 + getMemory() + "GB";
     }
 
